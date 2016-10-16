@@ -1,0 +1,8 @@
+[user]
+    name = Rodrigo De Frutos
+    email = darkrodry@gmail.com
+[core]
+    excludesfile = ~/.gitignore_global
+    editor = vim
+[color]
+    ui = true

@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 # Update current package
 yaourt -Syua
 

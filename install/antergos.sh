@@ -1,7 +1,9 @@
 yaourt -Syua
 
 apps=(
+  docker
   guake
+  intellij-idea-ue-eap
   lolcat
   sublime-text
   telegram-desktop-bin

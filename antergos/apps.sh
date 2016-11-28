@@ -9,6 +9,7 @@ apps=(
   guake
   intellij-idea-ue-eap
   lolcat
+  spotify
   sublime-text
   telegram-desktop-bin
   vim

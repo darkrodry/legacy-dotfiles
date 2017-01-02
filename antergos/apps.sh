@@ -9,6 +9,7 @@ apps=(
   guake
   intellij-idea-ue-eap
   lolcat
+  pyenv
   spotify
   sublime-text
   telegram-desktop-bin

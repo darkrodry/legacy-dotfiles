@@ -6,6 +6,7 @@ brew upgrade
 
 apps=(
   git
+  pyenv
   wget
   zsh
 )

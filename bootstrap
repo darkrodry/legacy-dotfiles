@@ -4,6 +4,37 @@ INSTALL=false
 UPDATE=true
 DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+install_base_config () {
+  if $INSTALL; then
+    echo "Installing first configuration\n"
+
+    if [ "$(uname)" == "Darwin" ]; then
+      . "$DOTFILES_DIR/osx/install.sh"
+    elif [ "$(uname)" == "Linux" ]; then
+      . "$DOTFILES_DIR/antergos/install.sh"
+    fi
+
+    install_oh_my_zsh
+  fi
+}
+
+install_dotfiles() {
+  if $UPDATE; then 
+    echo "\nInstalling dotfiles\n"
+
+    ln -sfv "$DOTFILES_DIR/zsh/.zshrc" ~
+
+    ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
+    ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
+  fi
+}
+
+install_oh_my_zsh () {
+  chsh -s $(which zsh)
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  wget https://raw.githubusercontent.com/dracula/zsh/master/dracula.zsh-theme -O ~/.oh-my-zsh/themes/dracula.zsh-theme
+}
+
 while getopts 'iu' flag; do
   case "${flag}" in
     i) INSTALL=true ;;
@@ -12,19 +43,6 @@ while getopts 'iu' flag; do
   esac
 done
 
-if $INSTALL; then
-  echo "Installing first configuration\n"
+install_base_config
+install_dotfiles
 
-  if [ "$(uname)" == "Darwin" ]; then
-    . "$DOTFILES_DIR/osx/install.sh"
-  elif [ "$(uname)" == "Linux" ]; then
-    . "$DOTFILES_DIR/antergos/install.sh"
-  fi
-fi
-
-if $UPDATE; then 
-  echo "\nInstalling dotfiles\n"
-
-  ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
-  ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
-fi

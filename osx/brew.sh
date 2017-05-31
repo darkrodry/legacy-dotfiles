@@ -25,7 +25,9 @@ install_brew_cask() {
     android-studio
     docker
     firefox
+    gitkraken
     intellij-idea-ce
+    iterm2
     slack
     spotify
     sublime-text

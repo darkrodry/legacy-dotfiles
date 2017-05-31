@@ -8,6 +8,7 @@ apps=(
   android-studio
   docker
   firefox
+  gitkraken
   guake
   intellij-idea-ue-eap
   lolcat

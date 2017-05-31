@@ -22,8 +22,11 @@ install_brew_cask() {
   brew tap caskroom/cask
 
   cask=(
+    android-studio
     docker
+    firefox
     intellij-idea-ce
+    slack
     spotify
     sublime-text
     telegram-desktop

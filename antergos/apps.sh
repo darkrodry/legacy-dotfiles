@@ -5,11 +5,14 @@ yaourt -Syua
 
 # Install base apps
 apps=(
+  android-studio
   docker
+  firefox
   guake
   intellij-idea-ue-eap
   lolcat
   pyenv
+  slack-desktop
   spotify
   sublime-text
   telegram-desktop-bin

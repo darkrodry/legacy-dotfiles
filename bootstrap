@@ -13,19 +13,17 @@ while getopts 'iu' flag; do
 done
 
 if $INSTALL; then
-  echo "Installing first configuration"
+  echo "Installing first configuration\n"
 
   if [ "$(uname)" == "Darwin" ]; then
-    echo "-> osX configuration"
-    . "$DOTFILES_DIR/osx/brew.sh"
+    . "$DOTFILES_DIR/osx/install.sh"
   elif [ "$(uname)" == "Linux" ]; then
-    echo "-> antergos configuration"
-    . "$DOTFILES_DIR/antergos/apps.sh"
+    . "$DOTFILES_DIR/antergos/install.sh"
   fi
 fi
 
 if $UPDATE; then 
-  echo "Installing dotfiles"
+  echo "\nInstalling dotfiles\n"
 
   ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
   ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~

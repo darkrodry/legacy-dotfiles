@@ -5,6 +5,19 @@
 
 - clean: ["~"]
 
+- shell:
+    - description: "[ZSH] Installing Oh-My-Zsh"
+      command: >
+        [ -d ~/.oh-my-zsh ] ||
+        git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+
+    - description: "[ZSH] Installing dracula theme"
+      command: >
+        [ -d ~/.dotfiles/zsh/themes/dracula ] ||
+        git clone https://github.com/dracula/zsh.git zsh/themes/dracula
+
 - link:
     ~/.gitconfig: git/gitconfig
     ~/.gitignore: git/gitignore
+    ~/.zshrc: zsh/zshrc
+    ~/.oh-my-zsh/themes/dracula.zsh-theme: zsh/themes/dracula/dracula.zsh-theme

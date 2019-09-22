@@ -28,8 +28,10 @@
 - brew:
     - httpie
     - wget
+    - yarn
 
 - cask:
+    - android-studio
     - caffeine
     - docker
     - firefox

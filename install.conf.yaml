@@ -13,11 +13,32 @@
 
     - description: "[ZSH] Installing dracula theme"
       command: >
-        [ -d ~/.dotfiles/zsh/themes/dracula ] ||
+        [ -d zsh/themes/dracula ] ||
         git clone https://github.com/dracula/zsh.git zsh/themes/dracula
 
     - description: "[NVM] Installing node version manager"
       command: curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+    
+    - defaults write com.apple.dock static-only -bool TRUE
+    - defaults write com.apple.dock autohide -bool TRUE 
+    - defaults write com.apple.dock tilesize -int 56
+    - defaults write com.apple.dock largesize -int 84 
+    - killall Dock
+
+- brew:
+    - httpie
+    - wget
+
+- cask:
+    - caffeine
+    - docker
+    - firefox
+    - iterm2
+    - postman
+    - slack
+    - spotify
+    - telegram-desktop
+    - visual-studio-code
 
 - link:
     ~/.gitconfig: git/gitconfig

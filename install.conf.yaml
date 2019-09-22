@@ -18,11 +18,11 @@
 
     - description: "[NVM] Installing node version manager"
       command: curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-    
+
     - defaults write com.apple.dock static-only -bool TRUE
-    - defaults write com.apple.dock autohide -bool TRUE 
+    - defaults write com.apple.dock autohide -bool TRUE
     - defaults write com.apple.dock tilesize -int 56
-    - defaults write com.apple.dock largesize -int 84 
+    - defaults write com.apple.dock largesize -int 84
     - killall Dock
 
 - brew:
@@ -61,7 +61,6 @@
           --install-extension redhat.vscode-yaml \
           --install-extension vscode-icons-team.vscode-icons \
           --install-extension vscodevim.vim
-        
 
 - link:
     ~/.gitconfig: git/gitconfig

@@ -13,8 +13,8 @@
 
     - description: "[ZSH] Installing dracula theme"
       command: >
-        [ -d zsh/themes/dracula ] ||
-        git clone https://github.com/dracula/zsh.git zsh/themes/dracula
+        [ -d config/zsh/themes/dracula ] ||
+        git clone https://github.com/dracula/zsh.git config/zsh/themes/dracula
 
     - description: "[NVM] Installing node version manager"
       command: curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
@@ -65,7 +65,7 @@
           --install-extension vscodevim.vim
 
 - link:
-    ~/.gitconfig: git/gitconfig
-    ~/.gitignore_global: git/gitignore
-    ~/.zshrc: zsh/zshrc
-    ~/.oh-my-zsh/themes/dracula.zsh-theme: zsh/themes/dracula/dracula.zsh-theme
+    ~/.gitconfig: config/git/gitconfig
+    ~/.gitignore_global: config/git/gitignore
+    ~/.zshrc: config/zsh/zshrc
+    ~/.oh-my-zsh/themes/dracula.zsh-theme: config/zsh/themes/dracula/dracula.zsh-theme

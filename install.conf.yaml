@@ -66,6 +66,6 @@
 
 - link:
     ~/.gitconfig: git/gitconfig
-    ~/.gitignore: git/gitignore
+    ~/.gitignore_global: git/gitignore
     ~/.zshrc: zsh/zshrc
     ~/.oh-my-zsh/themes/dracula.zsh-theme: zsh/themes/dracula/dracula.zsh-theme

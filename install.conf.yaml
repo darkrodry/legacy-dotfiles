@@ -27,6 +27,7 @@
 
 - brew:
     - httpie
+    - kubernetes-cli
     - wget
     - yarn
 
@@ -35,6 +36,7 @@
     - caffeine
     - docker
     - firefox
+    - google-cloud-sdk
     - iterm2
     - postman
     - slack

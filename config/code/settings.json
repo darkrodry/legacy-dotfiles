@@ -1,0 +1,11 @@
+{
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Dracula",
+  "editor.tabSize": 2,
+  "files.trimTrailingWhitespace": true,
+  "eslint.autoFixOnSave": true,
+  "window.zoomLevel": -1,
+  "terminal.integrated.shell.linux": "/bin/zsh",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "editor.fontFamily": "'Cascadia Code', Menlo, Monaco, 'Courier New', monospace",
+}

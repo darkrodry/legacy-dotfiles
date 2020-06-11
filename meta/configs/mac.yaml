@@ -1,0 +1,28 @@
+- shell:
+    - defaults write com.apple.dock static-only -bool TRUE
+    - defaults write com.apple.dock autohide -bool TRUE
+    - defaults write com.apple.dock tilesize -int 56
+    - defaults write com.apple.dock largesize -int 84
+    - killall Dock
+
+- brew:
+    - httpie
+    - kubernetes-cli
+    - wget
+    - yarn
+
+- cask:
+    - android-studio
+    - caffeine
+    - docker
+    - firefox
+    - google-cloud-sdk
+    - iterm2
+    - minikube
+    - postman
+    - rectangle
+    - slack
+    - spotify
+    - telegram-desktop
+    - the-unarchiver
+    - visual-studio-code

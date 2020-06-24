@@ -1,0 +1,13 @@
+- shell:
+  - sudo apt install curl
+  - sudo apt install zsh
+- shell:
+  - sudo snap install code --classic
+  - sudo snap install docker
+  - sudo snap install firefox
+  - sudo snap install http
+  - sudo snap install kubectl --classic
+  - sudo snap install postman
+  - sudo snap install slack --classic
+  - sudo snap install spotify
+  - sudo snap install telegram-desktop

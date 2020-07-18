@@ -1,10 +1,12 @@
 - shell:
   - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
   - echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-  - sudo apt update && sudo apt upgrade
+  - sudo apt update
+  - sudo apt --assume-yes upgrade
 
 - shell:
   - sudo apt --assume-yes install curl
+  - sudo apt --assume-yes install guake
   - sudo apt --assume-yes remove cmdtest; sudo apt --assume-yes install yarn
   - sudo apt --assume-yes install zsh
 

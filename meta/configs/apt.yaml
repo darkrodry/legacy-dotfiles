@@ -11,8 +11,26 @@
   - sudo apt --assume-yes install zsh
 
 - shell:
+  - command: >
+      sudo apt --assume-yes install \
+        apt-transport-https \
+        ca-certificates \
+        curl \
+        gnupg-agent \
+        software-properties-common
+  - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  - command: >
+      sudo add-apt-repository \
+        "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+        $(lsb_release -cs) \
+        stable"
+  - sudo apt update
+  - sudo apt --assume-yes install docker-ce docker-ce-cli containerd.io
+
+
+
+- shell:
   - sudo snap install code --classic
-  - sudo snap install docker
   - sudo snap install http
   - sudo snap install kubectl --classic
   - sudo snap install postman

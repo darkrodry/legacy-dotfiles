@@ -7,18 +7,14 @@
 
 - brew:
     - httpie
-    - kubernetes-cli
     - wget
     - yarn
 
 - cask:
-    - android-studio
     - caffeine
     - docker
     - firefox
-    - google-cloud-sdk
     - iterm2
-    - minikube
     - postman
     - rectangle
     - slack

@@ -18,5 +18,4 @@
           --install-extension ms-vsliveshare.vsliveshare \
           --install-extension pnp.polacode \
           --install-extension redhat.vscode-yaml \
-          --install-extension vscode-icons-team.vscode-icons \
-          --install-extension vscodevim.vim
+          --install-extension vscode-icons-team.vscode-icons

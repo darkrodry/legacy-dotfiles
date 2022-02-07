@@ -1,8 +1,10 @@
 [user]
-    name = Rodrigo De Frutos
-    email = darkrodry@gmail.com
+  name = Rodrigo De Frutos
+  email = darkrodry@gmail.como
 [core]
-    excludesfile = ~/.gitignore_global
-    editor = vim
+  excludesfile = ~/.gitignore_global
+  editor = vim
 [color]
-    ui = true
+  ui = true
+[pull]
+  rebase = true

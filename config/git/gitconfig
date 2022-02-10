@@ -1,6 +1,6 @@
 [user]
   name = Rodrigo De Frutos
-  email = darkrodry@gmail.como
+  email = darkrodry@gmail.com
 [core]
   excludesfile = ~/.gitignore_global
   editor = vim

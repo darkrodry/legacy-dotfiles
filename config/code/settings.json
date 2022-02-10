@@ -1,11 +1,23 @@
 {
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.colorTheme": "Dracula",
-  "editor.tabSize": 2,
-  "files.trimTrailingWhitespace": true,
-  "eslint.autoFixOnSave": true,
-  "window.zoomLevel": -1,
-  "terminal.integrated.shell.linux": "/bin/zsh",
-  "terminal.integrated.shell.osx": "/bin/zsh",
-  "editor.fontFamily": "'Cascadia Code', Menlo, Monaco, 'Courier New', monospace",
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+	},
+	"editor.bracketPairColorization.enabled": true,
+	"editor.defaultFormatter": "dbaeumer.vscode-eslint",
+	"editor.fontFamily": "'Cascadia Code', Menlo, Monaco, 'Courier New', monospace",
+	"editor.formatOnSave": true,
+	"editor.guides.bracketPairs": true,
+	"editor.tabSize": 2,
+	"eslint.alwaysShowStatus": true,
+	"eslint.format.enable": true,
+	"files.trimTrailingWhitespace": true,
+	"terminal.external.linuxExec": "iterm",
+	"vsicons.dontShowNewVersionMessage": true,
+	"workbench.colorTheme": "Dracula"
 }

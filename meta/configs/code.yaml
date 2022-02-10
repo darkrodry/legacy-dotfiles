@@ -1,21 +1,21 @@
 - shell:
     - description: "[code] Installing plugins"
       command: >
-        code --install-extension 2gua.rainbow-brackets \
+        code \
+          --install-extension alefragnani.project-manager \
           --install-extension Arjun.swagger-viewer \
-          --install-extension bungcip.better-toml \
           --install-extension dbaeumer.vscode-eslint \
           --install-extension dracula-theme.theme-dracula \
           --install-extension eamodio.gitlens \
           --install-extension EditorConfig.EditorConfig \
           --install-extension esbenp.prettier-vscode \
           --install-extension HookyQR.beautify \
+          --install-extension marclipovsky.string-manipulation \
           --install-extension ms-azuretools.vscode-docker \
           --install-extension MS-CEINTL.vscode-language-pack-es \
           --install-extension ms-mssql.mssql \
           --install-extension ms-python.python \
-          --install-extension ms-vscode.vscode-typescript-tslint-plugin \
           --install-extension ms-vsliveshare.vsliveshare \
+          --install-extension Orta.vscode-jest \
           --install-extension pnp.polacode \
-          --install-extension redhat.vscode-yaml \
-          --install-extension vscode-icons-team.vscode-icons
+          --install-extension redhat.vscode-yaml
